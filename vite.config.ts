@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     watch: {
-      ignored: ['**/.venv/**'],
+      ignored: ['**/.venv/**', '**/.vs/**'],
     },
     proxy: {
       '/api': 'http://127.0.0.1:8001',
